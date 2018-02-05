@@ -1,0 +1,2 @@
+gcc -c .\native\src\com_haswalk_jvlapack_JvLapack.c -o .\native\src\com_haswalk_jvlapack_JvLapack.o -I "%MKL_ROOT%\include" -I "%JAVA_HOME%\include" -I "%JAVA_HOME%\include\win32"
+gcc -shared -o .\native\lib\com_haswalk_jvlapack_JvLapack.dll .\native\src\com_haswalk_jvlapack_JvLapack.o -L "%MKL_ROOT%\lib\intel64_win" -lmkl_rt
